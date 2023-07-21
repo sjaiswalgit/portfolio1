@@ -1,5 +1,5 @@
 import React from 'react'
-import {passprt} from '../images'
+import passprt from '../../images/passprt.jpg'
 import Social from '../Social/social'
 export default function Card(){
     return(
