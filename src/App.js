@@ -1,9 +1,11 @@
 import './App.css'
 import React from 'react'
-
+import Header from './compnents/Header/header'
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Header/>
+    </div>
   )
 }
 
