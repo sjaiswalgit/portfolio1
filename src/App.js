@@ -1,10 +1,10 @@
 import './App.css'
 import React from 'react'
-import Header from './compnents/Header/header'
+import Intro from './components/Intro/intro'
 const App = () => {
   return (
     <div>
-      <Header/>
+      <Intro/>
     </div>
   )
 }
