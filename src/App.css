@@ -1,3 +1,138 @@
-.App {
+*
+{margin:0;padding: 0;}
+.App{
+  background: linear-gradient(white 50vh,#e6dace 50vh);
+}
+.about{
+  padding: 2.125em 1.25em 2.25em 1.25em;
+}
+.contact{
+  padding:1.6875em 1.25em 1em 1.25em;
+  background-color: white;
+}
+.name{
+  font-family: 'Poppins',sans-serif;
+  font-size:1.25rem;
+  font-weight:600;
+}
+button,.job{
+  font-family:'Nunito',sans-serif;
+  font-size: 0.9375rem;
+  font-weight:600;
+  letter-spacing: 0.02em;
+}
+.green_dot{
+  display: inline-block;
+  background-color:#0050ff ;
+  width:0.9375rem;
+  height: 0.9375rem;
+}
+.job{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:0.1875rem;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F4ECE6;
+  margin-top:1.0625em;
+  padding: 1.4375em 0 0.75em 0;
+  box-shadow: -0.5em 0.5em 1em rgba(138,131,124,023);
+}
+.card>img{
+  margin-right: 4.625em;
+  margin-left: 4.625em;
+  width: 7.5em;
+  height: 7.5em;
+}
+.profile_name{
+  max-width: 6.25em;
   text-align: center;
+  margin-top: 0.625em;
+}
+hr{
+  color:#529CF2;
+  width: 7.875em;
+  margin-top: 1.125em;
+}
+.btn{
+  display: flex;
+  gap:0.6875rem;
+}
+button{
+  width:7.67em;
+  height:2.2em;
+  border-radius: 4.2em;
+  margin-top:1.33em;
+  font-weight: 600;
+}
+.resume_btn{
+  background-color: #0050ff;
+  border-style: none;
+  color: white;
+}
+.projects_btn{
+  background-color: #F4ECE6;
+  border:1px solid black;
+}
+.social{
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1.25em;
+  padding-block: 0.625em;
+}
+.fa-brands{
+color: black;
+}
+.greetings{
+  font-family: 'Poppins',sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-top: 0.65em;
+}
+.starting_intro{
+  margin-top: 0.79em;
+  font-family:'Nunito',sans-serif;
+  font-weight: bold;
+  font-size: 1.1875rem;
+}
+.about_myself,.more_about_myself{
+  margin-top: 27px;
+  font-family: 'Nunito',sans-serif;
+  line-height: 1.5em;
+}
+.get_in_touch{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  gap:0.3125rem;
+}
+.connect{
+  font-family: 'Nunito',sans-serif;
+  font-size: 0.9375rem;
+  font-weight:bold;
+}
+.phone_num,.email{
+  font-family: 'Nunito',sans-serif;
+  font-size:0.875rem;
+  margin-top: 0.786em;
+}
+.follow{
+  margin-top: 1.6em;
+}
+.social_platforms{
+  display: flex;
+  justify-content:flex-start;
+  gap:0.625em;
+  margin-top: 0.75em;
+}
+footer{
+  font-family: 'Nunito',sans-serif;
+  font-size: 0.875rem;
+  margin-top: 1.786em;
 }

@@ -7,12 +7,16 @@ import Header from './components/Header/header'
 import Card from './components/Card/card'
 const App = () => {
   return (
-    <div>
-      <Header/>
-      <Card/>
-      <Intro/>
-      <Contact/>
-      <Footer />
+    <div className='App'>
+       <div className="about">
+        <Header/>
+        <Card/>
+        <Intro/>
+      </div>
+      <div className="contact">
+        <Contact/>
+        <Footer/>
+      </div>
     </div>
   )
 }

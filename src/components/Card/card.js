@@ -5,10 +5,12 @@ export default function Card(){
     return(
         <div className='card'>
             <img src={passprt} alt="Subhash"/>
-            <figcaption>Subhash Kumar Jaiswal</figcaption>
+            <figcaption className='name profile_name'>Subhash Kumar Jaiswal</figcaption>
             <hr/>
-            <button>RESUME</button>
-            <button>PROJECTS</button>
+            <div className="btn">
+                <button className="resume_btn">RESUME</button>
+                <button className="projects_btn">PROJECTS</button>
+            </div>
             <Social/>
         </div>
     )
