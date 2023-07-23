@@ -1,24 +1,35 @@
 *{margin:0;
   padding: 0;}
-  .navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  html
+  {scroll-behavior: smooth;}
 .App{
-  background: linear-gradient(white 50vh,#e6dace 50vh);
+  position: relative;
+  margin: 0;
+}
+.slash{
+  display: none;
 }
 .about{
-  padding: 2.125em 1.25em 2.25em 1.25em;
+  padding: 0 1.25em 1.625em 1.25em;
+  background-image: linear-gradient(white 50%,#e6dace 50%);
+}
+.intro{
+  padding: 0 1.25em 2.25em 1.25em;
+  background-color: #e6dace;
 }
 .contact{
   padding:1.6875em 1.25em 1em 1.25em;
   background-color: white;
 }
+.nav_brand{
+  display: flex;
+  flex-direction: column;
+}
 .name{
   font-family: 'Poppins',sans-serif;
   font-size:1.25rem;
   font-weight:600;
+  min-width: 196.8px;
 }
 button,.job{
   font-family:'Nunito',sans-serif;
@@ -26,29 +37,18 @@ button,.job{
   font-weight:600;
   letter-spacing: 0.02em;
 }
-.green_dot{
+.blue_dot{
   display: inline-block;
   background-color:#0050ff ;
-  width:0.9375rem;
-  height: 0.9375rem;
-}
-.job{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap:0.1875rem;
 }
 .card{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background-color: #F4ECE6;
-  margin-top:1.0625em;
-  padding: 1.4375em 0 0.75em 0;
+  transition: all 0.5s ease-in-out;
   box-shadow: -0.5em 0.5em 1em rgba(138,131,124,023);
 }
-.card>img{
+.about .card>img{
   margin-right: 4.625em;
   margin-left: 4.625em;
   width: 7.5em;
@@ -74,11 +74,13 @@ button{
   border-radius: 4.2em;
   margin-top:1.33em;
   font-weight: 600;
+  transition: all 0.3s ease-in-out;
 }
 .resume_btn{
   background-color: #0050ff;
   border-style: none;
   color: white;
+  border: 1px solid #0050ff;
 }
 .projects_btn{
   background-color: #F4ECE6;
@@ -99,7 +101,13 @@ color: black;
   font-family: 'Poppins',sans-serif;
   font-weight: bold;
   font-size: 2.5rem;
-  margin-top: 0.65em;
+  padding-top: 12px;
+}
+.contacts{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .starting_intro{
   margin-top: 0.79em;
@@ -125,7 +133,6 @@ color: black;
 .phone_num,.email{
   font-family: 'Nunito',sans-serif;
   font-size:0.875rem;
-  margin-top: 0.786em;
 }
 .follow{
   margin-top: 1.6em;
@@ -145,13 +152,18 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 90.8px;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
 }
 .nav_dropdown{
-  z-index:1;
+  z-index:2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  right: 1.25em;
 }
 .line1,.line2,.line3{
   background-color:#0050ff;
@@ -172,9 +184,13 @@ footer{
 }
 .nav-items{
   display: none;
+  animation:disappear 0.7s ease-in-out 0s 1;
+  animation-fill-mode: forwards;
 }
 .nav_links{
   position: absolute;
+  top:0;
+  left:0;
   z-index:1;
   width: 100vw;
   height: 100vh;
@@ -185,14 +201,7 @@ footer{
   justify-content: center;
   align-items: center;
   transform:translateY(-800px);
-}
-.nav-item{
-  font-size:20px;
-  font-family: 'Poppins',sans-serif;
-  font-weight: 700;
-  height: 56px;
-  width: 188px;
-  text-align: center;
+  gap:36px;
 }
 .nav-page{
   animation: navbar 0.7s ease-in-out 0s 1;
@@ -207,10 +216,6 @@ footer{
     transform: translateY(0);
     opacity: 100;
   }
-}
-.nav-items{
-  animation:disappear 0.7s ease-in-out 0s 1;
-  animation-fill-mode: forwards;
 }
 @keyframes disappear {
   0%{
@@ -324,5 +329,264 @@ footer{
   100%{
     transform: rotate(0deg);
     margin-left: auto;
+  }
+}
+.nav-item{
+  font-size:20px;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: #050505;
+  text-decoration-line: none;
+}
+.selected{
+  color:#0050ff;
+}
+.resume_access{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.intro>h1{
+  text-align: center;
+}
+.date{
+  color:#0050ff;
+  font-size:15px;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 700;
+}
+.edu_section{
+  margin-bottom: 54px;
+  font-family: 'Nunito',sans-serif;
+}
+.resume_section{
+  padding-bottom: 3.24em;
+  font-family: 'Nunito',sans-serif;
+}
+.exp_section,.edu_section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.job_pos,.institute,.location{
+  margin-bottom: 17px;
+}
+.exp_section,.edu,.resume_access{
+  margin-bottom:36px;
+}
+.cv{
+  font-size: 12.4px;
+  font-weight: 600;
+  width: 125px;
+  margin:0;
+
+}
+.resume{
+  padding-block: 61px 49px;
+  font-size: 29px;
+  font-family: 'Poppins',sans-serif;
+}
+.prof_header{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family:'Poppins',sans-serif ;
+  font-size: 18px;
+}
+.lang_header{
+  margin-top: 36px;
+  margin-bottom: 30px;
+  font-family:'Poppins',sans-serif ;
+  font-size: 18px;
+}
+.prof,.lang{
+  margin-bottom: 26px;
+}
+.exp,.edu{
+  font-family:'Poppins',sans-serif ;
+  font-size: 18px;
+}
+.blue_bar{
+  width:10px;
+  height: 23px;
+  background-color: #0050ff;
+  margin-right: 0.625em;
+}
+.project_name,.role{
+  display: flex;
+  align-items:center;
+}
+.project_name{
+  margin-top: 11px;
+  font-size: 15px;
+  font-family: 'Poppins',sans-serif;
+  font-weight: bold;
+  color:#0050ff;
+}
+.role{
+  align-items: flex-end;
+  margin-bottom: 18px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.project_description{
+  padding-left: 1.25em;
+  line-height: 1.5em;
+  margin-bottom: 16px;
+}
+
+.projects .card>a>img{
+  width: 100%;
+  height: 100%;
+}
+label{
+  font-family: 'Nunito',sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.input{
+  display: block;
+  border-style: none;
+  border-bottom: 1px solid;
+  font-family: 'Nunito',sans-serif;
+  height: 31.2px;
+  padding: 15px 3px 3px 15px;
+  width: 100%;
+  outline: none;
+}
+.input:hover{
+  color:#0050ff
+}
+.card:hover{
+  transform: scale(1.02);
+}
+.about .card:hover{
+  transform: scale(1);
+}
+.resume_btn:focus,.resume_btn:hover{
+  color:#0050ff;
+  background-color: white;
+}
+.projects_btn:hover,.projects_btn:focus{
+  color:white;
+  background-color: #0050ff;
+  border: 1px solid #0050ff;
+}
+
+.backToTop{
+  position: fixed;
+  bottom:1em;
+  right:1.25em;
+  background-color: #0050ff;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border: none;
+  opacity: 0;
+  z-index:-1
+}
+.show{
+  animation:show 8s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes show {
+  5%{
+    opacity: 100%;
+    z-index: 1;
+  }
+  100%{
+    opacity: 0%;
+    z-index: -1;
+  }
+}
+
+
+
+@media all and (min-width:460px){
+  .email>br{
+    display: none;
+  }
+}
+
+
+
+@media all and (orientation:landscape) and (min-width:836px){
+  .nav_dropdown{
+    display: none;
+  }
+  .nav_brand{
+    flex-direction: row;
+    align-items: center;
+    gap:4px;
+    min-width: 416.8px;
+  }
+  .name{
+    font-size: 25px;
+  }
+  .job{
+    font-size: 17px;
+    min-width: none;
+  }
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    height: 20vh;
+    position: sticky;
+    top:0;
+    z-index: 2;
+    background-color:white;
+
+  }
+  .nav_links{
+    position: static;
+    flex-direction: row;
+    justify-content: flex-end;
+    transform: translateY(0px);
+    background-color: transparent;
+    width: auto;
+    gap:16px;
+    height: 100%;
+  }
+  .nav-item{
+    font-size: 14px;
+    font-family: 'Nunito',sans-serif;
+    font-weight: 600;
+  }
+  .slash{
+    display: inline;
+    margin-right: 0.5em; 
+  }
+  .nav-item:hover{
+    border-bottom: 1px solid;
+  }
+  .fullName{
+    display:grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    gap:50px;
+  }
+  .get_in_touch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+    width: 50%;
+  }
+  .contact{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: 104.8px;
+  }
+  .follow,footer{
+    margin: 0;
+  }
+  .email>br{
+    display: none;
+  }
+  .phone_num,.email,.social_platforms{
+    margin: 0;
   }
 }
