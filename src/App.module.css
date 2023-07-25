@@ -1,0 +1,72 @@
+.App{
+    position: relative;
+    margin: 0;
+  }
+  .contact{
+    padding:1.6875em 1.25em 1em 1.25em;
+    background-color: white;
+  }
+  .stop_overflow{
+    height: 100vh;
+    overflow-y: hidden;}
+  .backToTop{
+    position: absolute;
+    bottom:1em;
+    right:1.25em;
+    background-color: #0050ff;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: none;
+  }
+  @media all and (orientation:landscape) and (min-width:908px){
+    .contact{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      height: 104.8px;
+      box-sizing: border-box;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    .backToTop{
+      display: none;
+    }
+  }
+  .App{
+    position: relative;
+    margin: 0;
+  }
+  .contact{
+    padding:1.6875em 1.25em 1em 1.25em;
+    background-color: white;
+  }
+  .stop_overflow{
+    height: 100vh;
+    overflow-y: hidden;}
+  .backToTop{
+    position: absolute;
+    bottom:1em;
+    right:1.25em;
+    background-color: #0050ff;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: none;
+  }
+  @media all and (orientation:landscape) and (min-width:908px){
+    .contact{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      height: 104.8px;
+      box-sizing: border-box;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    .backToTop{
+      display: none;
+    }
+  }

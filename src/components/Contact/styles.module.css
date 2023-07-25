@@ -1,0 +1,46 @@
+.get_in_touch{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap:0.3125rem;
+  }
+  .contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .connect{
+    font-family: 'Nunito',sans-serif;
+    font-size: 0.9375rem;
+    font-weight:bold;
+  }
+  .phone_num,.email{
+    font-family: 'Nunito',sans-serif;
+    font-size:0.875rem;
+  }
+  .follow{
+    margin-top: 1.6em;
+  }
+  .social{
+    display: flex;
+    justify-content:flex-start;
+    gap:0.625em;
+    margin-top: 0.75em;
+  }
+  @media all and (min-width:460px){
+    .break{
+      display: none;
+    }
+  }
+  @media all and (orientation:landscape) and (min-width:908px){
+    .get_in_touch{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:20px;
+        width: 50%;
+    }
+    .follow{
+        margin:0;
+    }
+  }

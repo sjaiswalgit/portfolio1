@@ -1,0 +1,76 @@
+
+.nav_links{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background-color: #f4ece6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform:translateY(-800px);
+    gap:36px;
+  }
+  .navItem{
+    font-size:20px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #050505;
+    text-decoration-line: none;
+  }
+  .selected{
+    color:#0050ff;
+  }
+  .navAppear{
+    animation: appear 0.7s ease-in-out 0s 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes appear {
+    0%{
+      transform: translateY(-800px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0);
+      opacity: 100;
+    }
+  }
+  .navDisappear{
+    animation:disappear 0.7s ease-in-out 0s 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes disappear {
+    0%{
+      transform: translateY(0);
+      opacity: 100;
+    }
+    100%{
+      transform: translateY(-800px);
+      opacity: 0;
+    }
+  }
+  @media all and (orientation:landscape) and (min-width:908px){
+    .nav_links{
+        position: static;
+        flex-direction: row;
+        justify-content: flex-end;
+        transform: translateY(0px);
+        background-color: transparent;
+        width: auto;
+        gap:16px;
+        height: 100%;
+      }
+      .navItem{
+        font-size: 14px;
+        font-family: 'Nunito',sans-serif;
+        font-weight: 600;
+      }
+      .navItem:hover{
+        border-bottom: 1px solid;
+      }
+  }

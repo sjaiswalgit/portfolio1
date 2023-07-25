@@ -1,17 +1,9 @@
 import React from 'react'
-import passprt from '../../images/passprt.jpg'
-import Social from '../Social/social'
-export default function Card(){
+import styles from './styles.module.css'
+export default function Card(props){
     return(
-        <div className='card'>
-            <img src={passprt} alt="Subhash"/>
-            <figcaption className='name profile_name'>Subhash Kumar Jaiswal</figcaption>
-            <hr/>
-            <div className="btn">
-                <button className="resume_btn">RESUME</button>
-                <button className="projects_btn">PROJECTS</button>
-            </div>
-            <Social/>
+        <div className={`${styles.card} ${props.className}`}>
+            {props.render()}
         </div>
     )
 }

@@ -1,25 +1,29 @@
 import React from "react";
 import {connect} from 'react-redux';
-import {toggle} from '../../redux/index'
+import { toggle,resize } from "../../redux/index";
+import {NavLink} from 'react-router-dom';
+import styles from './styles.module.css'
 function NavBar(props){
+    React.useEffect(()=>{window.addEventListener('resize',props.resize)}
+,[])
     return(
-        <div>
-            <nav className={`nav_links ${props.count?props.navBar?'nav-page':'nav-items':''}`}>
-                <p className='nav-item'>ABOUT ME</p>
-                <p className='nav-item'>RESUME</p>
-                <p className='nav-item'>PROJECTS</p>
-                <p className='nav-item'>CONTACT</p>
+            <nav className={props.desktop?`${styles.nav_links}`:`${styles.nav_links} ${props.count?(props.navBar?`${styles.navAppear}`:`${styles.navDisappear}`):''}`}>
+                <NavLink to ='/' className={({isActive})=>`${styles.navItem} ${isActive?`${styles.selected}`:''}`}  onClick={props.toggle}>ABOUT ME</NavLink>
+                <NavLink to ='/resume' className={({isActive})=>`${styles.navItem} ${isActive?`${styles.selected}`:''}`} onClick={props.toggle}>RESUME</NavLink>
+                <NavLink to='/projects' className={({isActive})=>`${styles.navItem} ${isActive?`${styles.selected}`:''}`} onClick={props.toggle}>PROJECTS</NavLink>
+                <NavLink to='/contact' className={({isActive})=>`${styles.navItem} ${isActive?`${styles.selected}`:''}`} onClick={props.toggle}>CONTACT</NavLink>
             </nav>
-        </div>
     );
 }
 function mapStateToProps(globalState){
     return {
         navBar:globalState.navBar,
-        count:globalState.count
+        count:globalState.count,
+        desktop:globalState.desktop
     }
 }
 const mapDispatchToProps={
-    toggle:toggle
+    toggle:toggle,
+    resize:resize
 }
 export default connect(mapStateToProps,mapDispatchToProps)(NavBar);

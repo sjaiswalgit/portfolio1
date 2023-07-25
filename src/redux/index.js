@@ -1,11 +1,17 @@
 import {createStore} from 'redux';
 const initialState={
     navBar:false,
-    count:0
+    count:0,
+    desktop:window.innerHeight<window.innerWidth && window.innerWidth>=908?true:false
 }
 export function toggle(){
     return {
         type:"TOGGLE"
+    }
+}
+export function resize(){
+    return{
+        type:"RESIZE"
     }
 }
 function reducer(state=initialState,action){
@@ -13,7 +19,14 @@ function reducer(state=initialState,action){
         case "TOGGLE":
             return {
                 navBar:!state.navBar,
-                count:state.count<1?1:state.count
+                count:state.count<1?1:state.count,
+                desktop:state.desktop
+            }
+        case "RESIZE":
+            return{
+                navBar:window.innerWidth>window.innerHeight && window.innerWidth>=908?false:state.navBar,
+                count:window.innerWidth>window.innerHeight && window.innerWidth>=908?0:state.count,
+                desktop:window.innerWidth>window.innerHeight && window.innerWidth>=908?true:false
             }
         default:
             return state;

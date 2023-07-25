@@ -1,0 +1,11 @@
+.footer{
+    font-family: 'Nunito',sans-serif;
+    font-size: 0.875rem;
+    margin-top: 1.786em;
+  }
+
+  @media all and (orientation:landscape) and (min-width:908px){
+    .footer{
+        margin: 0;
+      }
+  }

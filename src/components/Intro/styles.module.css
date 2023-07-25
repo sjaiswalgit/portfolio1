@@ -1,0 +1,101 @@
+.intro{
+    padding: 0 1.25em 2.25em 1.25em;
+    background-color: #e6dace;
+  }
+  .greetings{
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding-top: 12px;
+  }
+  .starting_intro{
+    margin-top: 0.79em;
+    font-family:'Nunito',sans-serif;
+    font-weight: bold;
+    font-size: 1.1875rem;
+  }
+  button{
+    font-family:'Nunito',sans-serif;
+    font-size: 0.9375rem;
+    font-weight:600;
+    letter-spacing: 0.02em;
+    width:7.67em;
+    height:2.2em;
+    border-radius: 4.2em;
+    margin-top:1.33em;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+  }
+  .btn{
+    display: none;
+  }
+  .resume_btn{
+    background-color: #0050ff;
+    border-style: none;
+    color: white;
+    border: 1px solid #0050ff;
+  }
+  .resume_btn:focus,.resume_btn:hover{
+    color:black;
+    background-color: #F4ECE6;
+    border-color:  black;
+  }
+  .projects_btn{
+    background-color: #F4ECE6;
+    border:1px solid black;
+  }
+  .projects_btn:hover,.projects_btn:focus{
+    color:white;
+    background-color: #0050ff;
+    border: 1px solid #0050ff;
+  }
+  .about_myself{
+    margin-top: 27px;
+    font-family: 'Nunito',sans-serif;
+    line-height: 1.5em;
+  }
+  .about_myself{
+    font-size: 17px;
+  }
+  @media all and (orientation:landscape) and (min-width:908px){
+    .intro{
+        background-color: transparent;
+        margin-right: 10%;
+        padding: 0;
+        height: 525.8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+      .intro *{
+        margin: 0;
+        padding: 0;
+      }
+    .greetings{
+        font-size: 100px;
+      }
+      .starting_intro{
+        font-size: 25px;
+      }
+      button{
+        font-family:'Nunito',sans-serif;
+        font-size: 0.9375rem;
+        font-weight:600;
+        letter-spacing: 0.02em;
+      }
+      .btn{
+        display: flex;
+        gap:0.6875rem;
+        }
+      .resume_btn:focus,.resume_btn:hover{
+        background-color: white;
+      }
+      .projects_btn{
+        background-color: white;
+      }
+      .projects_btn:hover,.projects_btn:focus{
+            background-color: #0050ff;
+            color: white;
+        }
+
+  }

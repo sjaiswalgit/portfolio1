@@ -1,0 +1,195 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90.8px;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+  }
+  .nav_brand{
+    display: flex;
+    flex-direction: column;
+  }
+  .name{
+    font-family: 'Poppins',sans-serif;
+    font-size:1.25rem;
+    font-weight:600;
+    min-width: 196.8px;
+  }
+  .blue_dot{
+    display: inline-block;
+    background-color:#0050ff ;
+    width:16px;
+    height: 16px;
+    margin-right: 0.8rem;
+  }
+  .job{
+    font-family:'Nunito',sans-serif;
+    font-size: 0.9375rem;
+    font-weight:600;
+    letter-spacing: 0.02em;
+  }
+  .slash{
+    display: none;
+  }
+  .nav_dropdown{
+    z-index:2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 1.25em;
+  }
+  .line1,.line2,.line3{
+    background-color:#0050ff;
+    height: 4px;
+    margin-top: 4px;
+  }
+  .line1{
+    width: 15px;
+    margin-top: 0;
+    margin-right: auto;
+  }
+  .line2{
+    width:30px;
+  }
+  .line3{
+    width: 15px;
+    margin-left:auto;
+  }
+  .close .line1, .close .line3{
+    margin-left:0;
+    margin-right: 0;
+  }
+  .close .line1{
+    animation:cross1 0.7s ease-in-out 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes cross1{
+    100%{
+      transform: rotate(-270deg) ;
+      background-color:#050505;
+    }
+  }
+  .close{
+    animation:cross2 0.7s ease-in-out 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes cross2{
+    100%{
+      transform: rotate(-45deg) ;
+    }
+  }
+  .close .line2{
+    animation:changeColor 0.7s ease-in-out 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes changeColor {
+    100%{
+      background-color: #050505;
+    }
+  }
+  .close .line3{
+    animation:cross3 0.7s ease-in-out 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes cross3{
+    100%{
+      transform: rotate(-90deg) ;
+      background-color: #050505;
+    }
+  }
+  .open .line1{
+    animation:reset1 0.7s ease-in-out 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes reset1 {
+    0%{
+      transform: rotate(-270deg) ;
+      background-color:#050505;
+      margin-right: 0;
+    }
+    100%{
+      transform: rotate(0deg);
+      margin-right:auto;
+    }
+  }
+  .open {
+    animation:reset2 0.7s ease-in-out 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes reset2 {
+    0%{
+      transform: rotate(-45deg) ;
+    }
+    100%{
+      transform: rotate(0deg);
+    }
+  }
+  .open .line3{
+    animation:reset3 0.7s ease-in-out 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes reset3 {
+    0%{
+      transform: rotate(-90deg) ;
+      background-color: #050505;
+      margin-left: 0;
+    }
+    100%{
+      transform: rotate(0deg);
+      margin-left: auto;
+    }
+  }
+  .open .line2{
+    animation:reset4 0.7s ease-in-out 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes reset3 {
+    0%{
+      transform: rotate(-90deg) ;
+      background-color: #050505;
+      margin-left: 0;
+    }
+    100%{
+      transform: rotate(0deg);
+      margin-left: auto;
+    }
+  }
+  @media all and (orientation:landscape) and (min-width:908px){
+    .navbar{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: baseline;
+        height: 126px;
+        position: sticky;
+        top:0;
+        z-index: 2;
+        background-color:white;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      .nav_brand{
+        flex-direction: row;
+        align-items: baseline;
+        gap:4px;
+        min-width: 416.8px;
+      }
+      .name{
+        font-size: 25px;
+      }
+      .job{
+        font-size: 17px;
+        min-width: none;
+      }
+      .slash{
+        display: inline;
+        margin-right: 0.5em; 
+      }
+      .nav_dropdown{
+        display: none;
+      }
+  }

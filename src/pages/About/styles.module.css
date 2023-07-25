@@ -1,0 +1,96 @@
+.about{
+    padding: 0 1.25em 1.625em 1.25em;
+    background-image: linear-gradient(white 50%,#e6dace 50%);
+  }
+  .DP{
+    margin-right: 4.625em;
+    margin-left: 4.625em;
+    width: 7.5em;
+    height: 7.5em;
+  }
+  .card{
+    background-color:#F4ECE6;
+    align-items:center;
+    padding:1.4375em 0 0.75em 0
+  }
+  .card:hover{
+    transform: scale(1);
+  }
+  .name{
+    font-family: 'Poppins',sans-serif;
+    font-size:1.25rem;
+    font-weight:600;
+    min-width: 196.8px;
+    max-width: 6.25em;
+    text-align: center;
+    margin-top: 0.625em;
+  }
+  hr{
+    color:#529CF2;
+    width: 5em;
+    margin-top: 1.125em;
+  }
+  .btn{
+    display: flex;
+    gap:0.6875rem;
+  }
+  .resume_btn{
+    background-color: #0050ff;
+    border-style: none;
+    color: white;
+    border: 1px solid #0050ff;
+  }
+  .resume_btn:focus,.resume_btn:hover{
+    color:black;
+    background-color: #F4ECE6;
+    border-color:  black;
+  }
+  .projects_btn{
+    background-color: #F4ECE6;
+    border:1px solid black;
+  }
+  .projects_btn:hover,.projects_btn:focus{
+    color:white;
+    background-color: #0050ff;
+    border: 1px solid #0050ff;
+  }
+  .job{
+    display: none;
+  }
+  @media all and (orientation:landscape) and (min-width:908px){
+    .desktop_about{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:3%;
+    }
+    .about{
+        background-image:none;
+        padding: 160px 0 160px 10%;
+        background-image: linear-gradient(to right,#e6dace 90%,white 90%);
+    }
+    .card{
+        width: 375;
+        height: 525.8px;
+        padding:0 !important ;
+        justify-content: space-between;
+      }
+      .DP{
+        width:205px ;
+        height: 205px;
+        margin-top: 45px;
+      }
+      .name{
+        font-size: 25px;
+        margin-top:0;
+      }
+      hr{
+        margin-top:0;
+      }
+      .btn{
+        display: none;
+      }
+      .job{
+        display: block;
+      }
+  }
