@@ -13,7 +13,7 @@ export default function About(){
         <Card render={()=>{
             return(
                 <>
-            <img src={DP} alt="Samrat" className={styles.DP}/>
+            <img src={DP} alt="Subhash" className={styles.DP}/>
             <figcaption className={styles.name}>Subhash<br/>Kumar Jaiswal</figcaption>
             <hr/>
             <div className={styles.btn}>

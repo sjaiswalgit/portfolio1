@@ -10,7 +10,7 @@ export default function Resume(){
             <div className={styles.exp_section}>
             <div className={styles.resume_access}>
                 <h3 className={styles.exp}>Experience</h3>
-                <a href='resume_link' target='_blank'><button className={styles.cv}>DOWNLOAD CV</button></a>
+                <a href="" target='_blank'><button className={styles.cv}>DOWNLOAD CV</button></a>
             </div>
             <Card render={()=>(
                 <>
@@ -27,18 +27,18 @@ export default function Resume(){
                 <Card render={()=>(
 
                 <>
-                        <p className={styles.edu}>2017-2021</p>
+                        <p className={styles.date}>2017-2021</p>
                         <p className={styles.institute}>NATIONAL INSTITUTE OF TECHNOLOGY SILCHAR</p>
                         <p className={styles.degree}>Bachelor Of Technolgy</p>
                         <p className={styles.location}>Silchar,Assam</p>
 
                         <p className={styles.date}>2014-2016</p>
-                        <p className={styles.job_pos}>B.BOROOAH COLLEGE</p>
+                        <p className={styles.institute}>B.BOROOAH COLLEGE</p>
                         <p className={styles.company}>Senior Secondary</p>
                         <p className={styles.location}>Guwahati,Assam</p>
 
                         <p className={styles.date}>2014</p>
-                        <p className={styles.job_pos}>PRESIDENCY SCHOOL</p>
+                        <p className={styles.institute}>PRESIDENCY SCHOOL</p>
                         <p className={styles.company}>Secondary</p>
                         <p className={styles.location}>Guwahati,Assam</p>
 

@@ -7,6 +7,7 @@ import About from './pages/About/about'
 import ContactForm from './pages/ContactForm/contactform'
 import Resume from './pages/Resume/resume'
 import Project from './pages/Project/project'
+import styles from './App.module.css'
 import {Routes as Switch,Route} from 'react-router-dom'
 import {connect} from "react-redux";
 import {toggle} from './redux/index'
@@ -24,7 +25,7 @@ const App = (props) => {
   }
   React.useEffect(()=>{
   window.addEventListener('scroll',show)},[])
-  return (<div className={`App ${props.navBar?'stop_overflow':''}`}>
+  return (<div className={props.desktop?`${styles.App}`:`${styles.App} ${props.navBar?`${styles.stop_overflow}`:''}`}>
     <Header/>
     <Switch>
         <Route exact path="/" element={<About/>}/>
@@ -32,11 +33,11 @@ const App = (props) => {
         <Route path='/project' element={<Project/>}/>
         <Route path='/contact' element={<ContactForm/>}/>
     </Switch>
-    <div className='contact'>
+    <div className={styles.contact}>
         <Contact/>
         <Footer/>
       </div>
-      <button className={`backToTop ${app}`} onClick={()=>window.scrollTo(0,0)}> <i className="fa-solid fa-arrow-up"></i></button>
+      <button className={styles.backToTop} onClick={()=>window.scrollTo(0,0)}> <i className="fa-solid fa-arrow-up"></i></button>
     </div>
   )
 }

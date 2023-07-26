@@ -19,7 +19,8 @@ function reducer(state=initialState,action){
         case "TOGGLE":
             return {
                 navBar:!state.navBar,
-                count:state.count<1?1:state.count,
+                navBar:window.innerWidth>window.innerHeight && window.innerWidth>=908?false:!state.navBar,
+                count:window.innerWidth>window.innerHeight && window.innerWidth>=908?0:1,
                 desktop:state.desktop
             }
         case "RESIZE":

@@ -1,140 +1,140 @@
 .resume_section{
-    padding: 0 1.25em 2.25em 1.25em;
-    background-color: #e6dace;
-    font-family: 'Nunito',sans-serif;
+  padding: 0 1.25em 2.25em 1.25em;
+  background-color: #e6dace;
+  font-family: 'Nunito',sans-serif;
 }
 .resume{
-    padding-block: 61px 49px;
-    font-size: 29px;
-    font-family: 'Poppins',sans-serif;
-    text-align: center;
-  }
-  .blue_dot{
-    display: inline-block;
-    background-color:#0050ff ;
-    width:19px;
-    height: 19px;
-    margin-right: 0.8rem;
-  }
-  .exp_section{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom:36px;
-  }
-  .resume_access{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom:36px;
-  }
-  .exp{
-    font-family:'Poppins',sans-serif ;
-    font-size: 18px;
-  }
-  .cv{
-    background-color: #0050ff;
-    border-style: none;
-    color: white;
-    border: 1px solid #0050ff;
-    font-size: 12.4px;
-    font-weight: 600;
-    width: 125px;
-    margin:0;
-  }
-  .cv:hover,.cv:focus{
-    color:black;
-    background-color: #e6dace;
-    border-color:  black;
-  }
-  .card{
-    background-color:white;
-    align-items: flex-start;
-    padding:2.25em 1.25em 2.875em 1.25em;
-  }
-  .date{
-    color:#0050ff;
-    font-size:15px;
-    font-family: 'Poppins',sans-serif;
-    font-weight: 700;
-  }
-  .edu_section{
-    margin-bottom: 54px;
-    font-family: 'Nunito',sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .edu{
-    margin-bottom:36px;
-    font-family:'Poppins',sans-serif ;
-    font-size: 18px;
-  }
-  .job_pos,.institute,.location{
-    margin-bottom: 17px;
-  }
-  .skillsCard{
-    background-color:white;
-    align-items:flex-start;
-    padding: 1.4375em 0 2em 1.25em;
-  }
-  .card:hover,.skillsCard:hover{
-      transform: scale(1.02);
-  }
-  .prof_header{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-family:'Poppins',sans-serif ;
-    font-size: 18px;
-  }
-  .lang_header{
-    margin-top: 36px;
-    margin-bottom: 30px;
-    font-family:'Poppins',sans-serif ;
-    font-size: 18px;
-  }
-  .prof,.lang{
-    margin-bottom: 26px;
-  }
+  padding-block: 61px 49px;
+  font-size: 29px;
+  font-family: 'Poppins',sans-serif;
+  text-align: center;
+}
+.blue_dot{
+  display: inline-block;
+  background-color:#0050ff ;
+  width:19px;
+  height: 19px;
+  margin-right: 0.8rem;
+}
+.exp_section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom:36px;
+}
+.resume_access{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:36px;
+}
+.exp{
+  font-family:'Poppins',sans-serif ;
+  font-size: 18px;
+}
+.cv{
+  background-color: #0050ff;
+  border-style: none;
+  color: white;
+  border: 1px solid #0050ff;
+  font-size: 12.4px;
+  font-weight: 600;
+  width: 125px;
+  margin:0;
+}
+.cv:hover{
+  color:black;
+  background-color: #e6dace;
+  border-color:  black;
+}
+.card{
+  background-color:white;
+  align-items: flex-start;
+  padding:2.25em 1.25em 2.875em 1.25em;
+}
+.date{
+  color:#0050ff;
+  font-size:15px;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 700;
+}
+.edu_section{
+  margin-bottom: 54px;
+  font-family: 'Nunito',sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.edu{
+  margin-bottom:36px;
+  font-family:'Poppins',sans-serif ;
+  font-size: 18px;
+}
+.job_pos,.institute,.location{
+  margin-bottom: 17px;
+}
+.skillsCard{
+  background-color:white;
+  align-items:flex-start;
+  padding: 1.4375em 0 2em 1.25em;
+}
+.card:hover,.skillsCard:hover{
+    transform: scale(1.02);
+}
+.prof_header{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family:'Poppins',sans-serif ;
+  font-size: 18px;
+}
+.lang_header{
+  margin-top: 36px;
+  margin-bottom: 30px;
+  font-family:'Poppins',sans-serif ;
+  font-size: 18px;
+}
+.prof,.lang{
+  margin-bottom: 26px;
+}
 
 @media all and (orientation:landscape) and (min-width:676px){
-    .resume_section{
-        padding:80px 26% 5em 26%;
+  .resume_section{
+      padding:80px 26% 5em 26%;
+  }
+  .resume{
+      font-size: 35px;
+  }
+  .blue_dot{
+      display: inline-block;
+      background-color:#0050ff ;
+      width:20px;
+      height: 20px;
+      margin-right: 0.8rem;
+  }
+  .exp{
+      font-size: 25px;
+  }
+  .cv{
+      font-size: 14px;
+      width: 151px;
+      height: 37px;
     }
-    .resume{
-        font-size: 35px;
+  .card,.skillsCard{
+      padding-top: 5em;
+      padding-bottom: 5em;
+      width: 375;
+  }
+  .date{
+      font-size: 20px;
     }
-    .blue_dot{
-        display: inline-block;
-        background-color:#0050ff ;
-        width:20px;
-        height: 20px;
-        margin-right: 0.8rem;
+  .edu{
+      font-size: 25px;
     }
-    .exp{
-        font-size: 25px;
-    }
-    .cv{
-        font-size: 14px;
-        width: 151px;
-        height: 37px;
-      }
-    .card,.skillsCard{
-        padding-top: 5em;
-        padding-bottom: 5em;
-        width: 375;
-    }
-    .date{
-        font-size: 20px;
-      }
-    .edu{
-        font-size: 25px;
-      }
-    .job_pos,.institute,.location{
-    font-size: 17px;
-    }
-    .prof_header,.lang_header{
-        font-size: 25px;
-    }
-
+  .job_pos,.institute,.location{
+  font-size: 17px;
+  }
+  .prof_header,.lang_header{
+      font-size: 25px;
+  }
+    
 }

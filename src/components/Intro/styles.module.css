@@ -35,16 +35,16 @@
     color: white;
     border: 1px solid #0050ff;
   }
-  .resume_btn:focus,.resume_btn:hover{
+  .resume_btn:hover{
     color:black;
-    background-color: #F4ECE6;
+    background-color: white;
     border-color:  black;
   }
   .projects_btn{
     background-color: #F4ECE6;
     border:1px solid black;
   }
-  .projects_btn:hover,.projects_btn:focus{
+  .projects_btn:hover{
     color:white;
     background-color: #0050ff;
     border: 1px solid #0050ff;
