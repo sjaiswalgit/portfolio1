@@ -17,7 +17,7 @@ export default function ContactForm(){
 
     function sendMail(e){
         e.preventDefault();
-        emailjs.sendForm('service_31cm626', 'template_j2ce0ts', form.current, 'H4dUH3fVS2uSa1XY0')
+        emailjs.sendForm('service_twnqysx', 'template_gesy0cx', form.current, '1Fr3TaD3AaKVhJ7ve')
         .then(function(response){setSuccess(true);setFailure(false);},function(error){setFailure(true);})
         
     }
@@ -35,13 +35,13 @@ export default function ContactForm(){
                     {!success && 
                     <form ref={form}onSubmit={sendMail}>
                         <div className={styles.fullName}>
-                            <label>First Name <span style={{color:'#0050ff'}}>*</span>
+                            <label>First Name <span style={{color:'#0050ff'}} >*</span>
                             <input value={inputs.fname} type='text' id='fname' className={styles.input} onChange={changeInput} name='fname' required/></label>
                             <label >Last Name <span style={{color:'#0050ff'}}>*</span>
                             <input value={inputs.lname} type='text' id='lname' className={styles.input}name='lname' onChange={changeInput} required/></label>
                         </div>
                         <label >Email <span style={{color:'#0050ff'}}>*</span>
-                        <input value={inputs.email} type='text' id='email' className={styles.input} name='email' onChange={changeInput} required/></label>
+                        <input value={inputs.email} type='email' id='email' className={styles.input} name='email' onChange={changeInput} required/></label>
                         <label >Subject <span style={{color:'#0050ff'}}>*</span>
                         <input value={inputs.subject} type='text' id='subject' className={styles.input} name='subject' onChange={changeInput} required/></label>
                         <label >Message <span style={{color:'#0050ff'}}>*</span>

@@ -1,4 +1,6 @@
 import React from "react";
+import Estore from '../../images/E-store.png'
+import ChatApp from '../../images/Chat-App.png'
 import Card from '../../components/Card/card'
 import styles from './styles.module.css'
 export default function Projects(){
@@ -10,8 +12,18 @@ export default function Projects(){
                 <>
                     <p className={styles.project_name}><span className={styles.blue_bar}></span>E-Store</p>
                     <p className={styles.role}><span className={styles.blue_bar}></span>Developer</p>
-                    <p className={styles.project_description}>It was my first project I built after learning React. It is a onditional rendering, use of hooks like useState and useEffect are used.</p>
-                    <a href='' target="_blank" ><img src="" alt='project_image' className={styles.project_img}/></a>
+                    <p className={styles.project_description}>This Project was created with the purpose of developing a frontend for E commerce website and implimenting concepts error handling, conditional rendering, custom validity message and React hooks. It has a client side routing. 
+                    It fetches data fom an open source api name fakestore and useContext to serve data to its dfferent childs</p>
+                    <a href='https://github.com/sjaiswalgit/E-store-project' target="_blank" ><img src={Estore} alt='project_image' className={styles.project_img}/></a>
+                </>
+            )
+            } className={styles.card}/>
+            <Card render={()=>(
+                <>
+                    <p className={styles.project_name}><span className={styles.blue_bar}></span>Chat App</p>
+                    <p className={styles.role}><span className={styles.blue_bar}></span>Developer</p>
+                    <p className={styles.project_description}>This Project was created with the purpose of integration of frontend and backend.It use Firestore for authentication and storage of data purspose.</p>
+                    <a href='https://github.com/sjaiswalgit/React-Chat-App' target="_blank" ><img src={ChatApp} alt='app link' className={styles.project_img}/></a>
                 </>
             )
             } className={styles.card}/>

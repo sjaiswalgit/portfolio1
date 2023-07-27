@@ -1,6 +1,7 @@
 import React from "react";
 import Card from '../../components/Card/card'
 import styles from './styles.module.css'
+import CV from '../../Subhash_resume.pdf'
 export default function Resume(){
     React.useEffect(()=>window.scrollTo(0,0),[])
     return(
@@ -10,7 +11,7 @@ export default function Resume(){
             <div className={styles.exp_section}>
             <div className={styles.resume_access}>
                 <h3 className={styles.exp}>Experience</h3>
-                <a href="" target='_blank'><button className={styles.cv}>DOWNLOAD CV</button></a>
+                <a href={CV} target='_blank'><button className={styles.cv}>DOWNLOAD CV</button></a>
             </div>
             <Card render={()=>(
                 <>

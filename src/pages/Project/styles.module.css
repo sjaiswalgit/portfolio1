@@ -18,6 +18,7 @@
   .card{
     padding-top: 1.4375em;
     background-color:white;
+    margin-bottom: 1.2em;
   }
   .card:hover{
     transform: scale(1.02);

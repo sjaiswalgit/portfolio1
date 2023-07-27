@@ -6,7 +6,7 @@ import Header from './components/Header/header'
 import About from './pages/About/about'
 import ContactForm from './pages/ContactForm/contactform'
 import Resume from './pages/Resume/resume'
-import Project from './pages/Project/project'
+import Projects from './pages/Project/project'
 import styles from './App.module.css'
 import {Routes as Switch,Route} from 'react-router-dom'
 import {connect} from "react-redux";
@@ -30,7 +30,7 @@ const App = (props) => {
     <Switch>
         <Route exact path="/" element={<About/>}/>
         <Route path='/resume' element={<Resume/>}/>
-        <Route path='/project' element={<Project/>}/>
+        <Route path='/projects' element={<Projects/>}/>
         <Route path='/contact' element={<ContactForm/>}/>
     </Switch>
     <div className={styles.contact}>
