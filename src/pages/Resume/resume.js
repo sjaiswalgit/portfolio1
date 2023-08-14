@@ -17,7 +17,7 @@ export default function Resume(){
                 <>
                     <p className={styles.date}>2021-2023</p>
                     <p className={styles.job_pos}>Area Service Manager</p>
-                    <p className={styles.company}>Bajaj Auto Pvt. Ltd.</p>
+                    <p className={styles.company}>Bajaj Auto Ltd.</p>
                     <p className={styles.location}>Kolkata</p>
                 </>
             )} className={styles.card}
