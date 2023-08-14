@@ -9,7 +9,7 @@ function Header(props){
     <header className={styles.navbar} >
         <div className={styles.nav_brand}>
             <h1 className={styles.name}>
-                <NavLink to='/' style={{color:'black',textDecorationLine:'none'}}><span className={styles.blue_dot}> </span>Subhash Kumar Jaiswal</NavLink>
+                <NavLink to='/' style={{color:'black',textDecorationLine:'none'}}><span className={styles.blue_dot}> </span>Subhash Kr. Jaiswal</NavLink>
             </h1>
             <h4 className={styles.job}><span className={styles.slash}>/</span>WEB DEVELOPER</h4>
         </div>
