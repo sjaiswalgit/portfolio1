@@ -14,7 +14,7 @@ export default function Projects(){
                     <p className={styles.role}><span className={styles.blue_bar}></span>Developer</p>
                     <p className={styles.project_description}>This Project was created with the purpose of developing a frontend for E commerce website and implimenting concepts error handling, conditional rendering, custom validity message and React hooks. It has a client side routing. 
                     It fetches data fom an open source api name fakestore and useContext to serve data to its dfferent childs</p>
-                    <a href='https://github.com/sjaiswalgit/E-store-project' target="_blank" ><img src={Estore} alt='project_image' className={styles.project_img}/></a>
+                    <a href='https://sjaiswalgit.github.io/E-store-project' target="_blank" rel="noreferrer" ><img src={Estore} alt='project_image' className={styles.project_img}/></a>
                 </>
             )
             } className={styles.card}/>
@@ -23,7 +23,7 @@ export default function Projects(){
                     <p className={styles.project_name}><span className={styles.blue_bar}></span>Chat App</p>
                     <p className={styles.role}><span className={styles.blue_bar}></span>Developer</p>
                     <p className={styles.project_description}>This Project was created with the purpose of integration of frontend and backend.It use Firestore for authentication and storage of data purspose.</p>
-                    <a href='https://github.com/sjaiswalgit/React-Chat-App' target="_blank" ><img src={ChatApp} alt='app link' className={styles.project_img}/></a>
+                    <a href='https://sjaiswalgit.github.io/React-Chat-App' target="_blank" rel="noreferrer"><img src={ChatApp} alt='app link' className={styles.project_img}/></a>
                 </>
             )
             } className={styles.card}/>

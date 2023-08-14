@@ -11,7 +11,7 @@ export default function Resume(){
             <div className={styles.exp_section}>
             <div className={styles.resume_access}>
                 <h3 className={styles.exp}>Experience</h3>
-                <a href={CV} target='_blank'><button className={styles.cv}>DOWNLOAD CV</button></a>
+                <a href={CV} target='_blank' rel="noreferrer"><button className={styles.cv}>DOWNLOAD CV</button></a>
             </div>
             <Card render={()=>(
                 <>
