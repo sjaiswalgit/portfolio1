@@ -2,7 +2,7 @@
   "name": "app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sjaiswalgit.github.io/Portfolio",
+  "homepage": "https://sjaiswalgit.github.io/portfolio1",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@reduxjs/toolkit": "^1.9.5",

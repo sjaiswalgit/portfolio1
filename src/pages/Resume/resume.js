@@ -55,6 +55,8 @@ export default function Resume(){
                         <p className={styles.prof}><span className={styles.blue_dot} style={{width:'13px',height:'13px'}}> </span>React</p>
                         <p className={styles.prof}><span className={styles.blue_dot} style={{width:'13px',height:'13px'}}> </span>HTML</p>
                         <p className={styles.prof}><span className={styles.blue_dot} style={{width:'13px',height:'13px'}}> </span>CSS</p>
+                        <p className={styles.prof}><span className={styles.blue_dot} style={{width:'13px',height:'13px'}}> </span>Javascript</p>
+                        <p className={styles.prof}><span className={styles.blue_dot} style={{width:'13px',height:'13px'}}> </span>Redux</p>
                         <p className={styles.prof}><span className={styles.blue_dot} style={{width:'13px',height:'13px'}}> </span>C++</p>
                         <p className={styles.prof}><span className={styles.blue_dot} style={{width:'13px',height:'13px'}}> </span>OOPs</p>
                         <p className={styles.lang_header}>Languages</p>
