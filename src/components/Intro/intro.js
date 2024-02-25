@@ -11,7 +11,7 @@ export default function Intro(){
                 <NavLink to='/projects'><button className={styles.projects_btn}>PROJECTS</button></NavLink>
         </div>
         <p className={styles.about_myself}>
-            I am a web development enthusiast. I am on a journey to learn and polish my frontend skills. I have acquired skills in HTML, CSS, React and JavaScript .
+            I am a web development enthusiast. I am on a journey to learn and polish my frontend skills. I have acquired skills in HTML, CSS, React, JavaScript and Nodejs.
         </p>
         <p className={styles.about_myself}>
             I am actually a Mechnaical Engineer by degree. But the addictive nature of coding got me and here I am developing and learning frontend of web to create some efficient and functional interfaces.

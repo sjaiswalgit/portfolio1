@@ -73,6 +73,10 @@
 .job_pos,.institute,.location{
   margin-bottom: 17px;
 }
+.job_des{
+padding-left:2.25rem ;
+margin-bottom: 17px;
+}
 .skillsCard{
   background-color:white;
   align-items:flex-start;
@@ -132,6 +136,9 @@
     }
   .job_pos,.institute,.location{
   font-size: 17px;
+  }
+  .job_des{
+    font-size: 14px;
   }
   .prof_header,.lang_header{
       font-size: 25px;
