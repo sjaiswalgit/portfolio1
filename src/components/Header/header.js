@@ -11,7 +11,7 @@ function Header(props){
             <h1 className={styles.name}>
                 <NavLink to='/' style={{color:'black',textDecorationLine:'none'}}><span className={styles.blue_dot}> </span>Subhash Kr. Jaiswal</NavLink>
             </h1>
-            <h4 className={styles.job}><span className={styles.slash}>/</span>WEB DEVELOPER</h4>
+            <h4 className={styles.job}><span className={styles.slash}>/</span>SOFTWARE DEVELOPER</h4>
         </div>
 
       <div className={`${styles.nav_dropdown} ${props.count===1?props.navBar?`${styles.close}`:`${styles.open}`:''}`} onClick={props.toggle}>
