@@ -10,7 +10,7 @@ export default function Projects() {
             <h1 className={styles.project}><span className={styles.blue_dot}> </span>Personal Projects</h1>
             <Card render={() => (
                 <>
-                    <p className={styles.project_name}><span className={styles.blue_bar}></span>Drag Code Gen</p>
+                    <p className={styles.project_name}><span className={styles.blue_bar}></span>Drag and Drop UI Builder</p>
                     <p className={styles.role}><span className={styles.blue_bar}></span>Developer</p>
                     <p className={styles.project_description}>An interactive web tool that allows users to drag and style UI components with real-time previews, enabling them to instantly copy optimized React.js code for seamless integration.
                         This platform enhances design efficiency, making it ideal for both new developers and frontend professionals.</p>
