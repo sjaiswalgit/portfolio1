@@ -16,8 +16,21 @@ export default function Resume() {
                 <Card render={() => (
 
                     <>
-                        <p className={styles.date}>2023-present</p>
-                        <p className={styles.job_pos}>Web Developer</p>
+                        <p className={styles.date}>2025-present</p>
+                        <p className={styles.job_pos}>Product Developer</p>
+                        <ul className={styles.job_des}>
+                            <li><b>Custom Search Builder:</b>  Implemented a dynamic query construction engine enabling users to build complex,
+                                multi-condition search queries at runtime, translating visual inputs into optimized backend queries for flexible and
+                                performant data retrieval.</li>
+                            <li><b>Microservices Architecture:</b> Built and maintained RESTful and gRPC-based APIs within a microservices
+                                framework, ensuring clear service boundaries, independent deployability, and reliable inter-service communication.</li>
+                            <li><b>Naming Framework Service:</b>  Built a scalable naming framework using Redis for backend caching and Redux for
+                                frontend state management, enabling consistent entity resolution across modules.</li>
+                            <li><b>Payment Integration:</b> Implemented end-to-end payment feature via Razorpay API, covering secure transaction
+                                processing and webhook-based verification.</li>
+                        </ul>
+                        <p className={styles.date}>2023-2025</p>
+                        <p className={styles.job_pos}>Software Developer</p>
                         <ul className={styles.job_des}>
                             <li><b>Developed APIs and Analytics Dashboards:</b>  Designed and implemented REST APIs , analytics and reporting pages in a Node.js application, enhancing data access and insights. Used MongoDB aggregation to optimize API response times, achieving a 30% efficiency boost.</li>
                             <li><b>Advanced Detection Solutions:</b> Built configurable software for face recognition, alcohol detection, and personal protective equipment (PPE) compliance, enabling the software to verify individuals' identities, assess alcohol levels, and confirm PPE adherence as required. This expanded the application’s scope to include real-time safety and compliance monitoring capabilities.</li>
