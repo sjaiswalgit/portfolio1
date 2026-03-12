@@ -29,6 +29,8 @@ export default function Resume() {
                             <li><b>Payment Integration:</b> Implemented end-to-end payment feature via Razorpay API, covering secure transaction
                                 processing and webhook-based verification.</li>
                         </ul>
+                        <p className={styles.company}>Inncircles Tecnologies</p>
+                        <p className={styles.location}>Hyderabad</p>
                         <p className={styles.date}>2023-2025</p>
                         <p className={styles.job_pos}>Software Developer</p>
                         <ul className={styles.job_des}>
